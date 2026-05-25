@@ -127,6 +127,8 @@ section{padding:6rem 2rem}
 .partner-card h4{font-size:1rem;font-weight:700;margin-bottom:.25rem;color:var(--gray-800)}
 .partner-card .partner-role{font-size:.72rem;font-weight:600;color:var(--orange);letter-spacing:.5px;margin-bottom:.75rem}
 .partner-card p{font-size:.82rem;color:var(--gray-400);line-height:1.55}
+.partner-card .partner-link{display:inline-flex;align-items:center;gap:6px;margin-top:1rem;padding:7px 16px;border-radius:6px;font-size:.75rem;font-weight:700;text-decoration:none;color:var(--navy);background:transparent;border:1.5px solid var(--orange);transition:all .2s;letter-spacing:.3px}
+.partner-card .partner-link:hover{background:var(--orange);color:var(--white)}
 
 /* ── SPRINT ── */
 .sprint{background:var(--gray-50)}
