@@ -154,7 +154,11 @@ section{padding:6rem 2rem}
 .footer-contacts a{color:var(--white);text-decoration:underline}
 .footer-contacts a:hover{opacity:.8}
 .footer-bottom{color:rgba(255,255,255,0.5);font-size:.7rem;letter-spacing:.5px;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.25)}
-.footer-partners{color:rgba(255,255,255,0.75);font-size:.72rem;margin-bottom:1.5rem}
+.footer-partners{display:flex;justify-content:center;align-items:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-partner-logo{height:26px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;transition:opacity .2s}
+.footer-partner-logo:hover{opacity:1}
+.footer-partner-logo--lg{height:40px}
+.footer-partner-logo--original{filter:none;opacity:0.9}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
