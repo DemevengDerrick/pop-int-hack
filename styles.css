@@ -130,6 +130,13 @@ section{padding:6rem 2rem}
 .partner-card .partner-link{display:inline-flex;align-items:center;gap:6px;margin-top:1rem;padding:7px 16px;border-radius:6px;font-size:.75rem;font-weight:700;text-decoration:none;color:var(--navy);background:transparent;border:1.5px solid var(--orange);transition:all .2s;letter-spacing:.3px}
 .partner-card .partner-link:hover{background:var(--orange);color:var(--white)}
 
+/* ── MENTORS ── */
+.mentors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:780px;margin:0 auto}
+.mentor-card{text-align:center;padding:1.5rem 1rem}
+.mentor-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:top;display:block;margin:0 auto 1rem;border:3px solid var(--gray-100)}
+.mentor-card h4{font-size:.95rem;font-weight:700;color:var(--gray-800);margin-bottom:.35rem}
+.mentor-card .mentor-title{font-size:.78rem;color:var(--gray-400);line-height:1.45}
+
 /* ── SPRINT ── */
 .sprint{background:var(--gray-50)}
 .sprint-phases{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
