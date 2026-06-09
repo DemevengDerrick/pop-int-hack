@@ -168,7 +168,7 @@ section{padding:6rem 2rem}
 
 /* ── SPRINT ── */
 .sprint{background:var(--gray-50)}
-.sprint-phases{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.sprint-phases{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
 .sprint-phase{padding:1.75rem;border-radius:12px;background:var(--white);border:1px solid var(--gray-100);position:relative}
 .sprint-phase-num{font-family:var(--font-mono);font-size:.65rem;color:var(--orange);font-weight:500;letter-spacing:1px;margin-bottom:.5rem}
 .sprint-phase h4{color:var(--gray-800);font-size:1rem;font-weight:700;margin-bottom:.75rem}
@@ -213,6 +213,17 @@ section{padding:6rem 2rem}
 .gbar-validate{background:linear-gradient(90deg,var(--blue),var(--teal))}
 .gbar-pilot{background:linear-gradient(90deg,var(--purple),var(--blue))}
 .gbar-operate{background:linear-gradient(90deg,var(--orange-dark),var(--orange))}
+.gbar-winners{background:linear-gradient(90deg,#b36200,var(--orange));box-shadow:0 0 10px rgba(249,96,0,.22)}
+/* capacity building: 3 tick dividers = 4 equal weekly segments */
+.gbar-sessions{overflow:hidden}
+.gsess-tick{position:absolute;top:5px;bottom:5px;width:1px;background:rgba(255,255,255,.3);pointer-events:none}
+.gsess-tick:nth-child(1){left:25%}
+.gsess-tick:nth-child(2){left:50%}
+.gsess-tick:nth-child(3){left:75%}
+/* narrow milestone bars — no text needed */
+.gbar-slim{min-width:0}
+/* winners tag */
+.gtag-winners{background:rgba(249,96,0,.1);color:var(--orange);font-size:.9rem}
 
 /* ── REGISTER ── */
 .register{background:linear-gradient(180deg,var(--white) 0%,var(--gray-50) 100%);position:relative}
@@ -244,7 +255,7 @@ section{padding:6rem 2rem}
   .mentors-grid{grid-template-columns:repeat(2,1fr)}
   .concept-flow{grid-template-columns:1fr 1fr}
   .concept-arrow{display:none}
-  .sprint-phases{grid-template-columns:1fr 1fr}
+  .sprint-phases{grid-template-columns:repeat(2,1fr)}
   .form-row{grid-template-columns:1fr}
   .track-options{grid-template-columns:1fr}
   .hero-stats{gap:1.5rem}

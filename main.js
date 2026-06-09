@@ -31,7 +31,7 @@ window.addEventListener('message', function(e) {
 // Gantt today marker
 (function() {
   var start = new Date('2026-06-03');
-  var end   = new Date('2026-10-17');
+  var end   = new Date('2026-10-31');
   var today = new Date();
   var pct   = (today - start) / (end - start);
   var el    = document.getElementById('ganttToday');

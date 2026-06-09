@@ -333,6 +333,200 @@
   </div>
 </section>
 
+<!-- SPRINT -->
+<section class="sprint" id="sprint">
+  <div class="section-inner reveal">
+    <div class="section-label">06 &middot; Sprint Structure</div>
+    <h2 class="section-title">Register. Learn. Pitch. Build. Present. Win.</h2>
+    <p class="section-desc">Five phases from June to end of October 2026 &mdash; from open registration to winners announced.</p>
+    <div class="sprint-phases">
+      <div class="sprint-phase">
+        <div class="sprint-phase-num">Jun 3 &ndash; Jun 30</div>
+        <h4>Registration</h4>
+        <ul>
+          <li>Sign up and select your track</li>
+          <li>Review datasets, tools and partner platforms</li>
+          <li>Join or form a project team</li>
+        </ul>
+      </div>
+      <div class="sprint-phase">
+        <div class="sprint-phase-num">Jul 1 &ndash; Jul 28</div>
+        <h4>Capacity Building</h4>
+        <ul>
+          <li>One deep-dive session per week</li>
+          <li>Data access, tool setup, methodology walkthroughs</li>
+          <li>Hosted by track mentors and partners</li>
+        </ul>
+      </div>
+      <div class="sprint-phase">
+        <div class="sprint-phase-num">Jul 29 &ndash; Aug 4</div>
+        <h4>Pitch Week</h4>
+        <ul>
+          <li>Teams present project proposals to mentors</li>
+          <li>Scope alignment and feedback</li>
+          <li>Final project plans confirmed</li>
+        </ul>
+      </div>
+      <div class="sprint-phase">
+        <div class="sprint-phase-num">Aug 5 &ndash; Oct 5</div>
+        <h4>Build Sprint</h4>
+        <ul>
+          <li>8 weeks of active prototyping</li>
+          <li>Weekly mentor check-ins per track</li>
+          <li>Iterate against real country data</li>
+        </ul>
+      </div>
+      <div class="sprint-phase">
+        <div class="sprint-phase-num">Oct 6 &ndash; Oct 12</div>
+        <h4>Restitution</h4>
+        <ul>
+          <li>Live demos with country counterparts</li>
+          <li>Jury evaluation and scoring</li>
+          <li>Open-source code submission</li>
+        </ul>
+      </div>
+      <div class="sprint-phase">
+        <div class="sprint-phase-num">by Oct 31</div>
+        <h4>Winners Announced</h4>
+        <ul>
+          <li>Final judging and recognition</li>
+          <li>Top teams celebrated across all three tracks</li>
+          <li>Code published on GitHub</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gantt Timeline -->
+    <div class="gantt-wrap reveal">
+      <div class="gantt-eyebrow">Sprint Calendar &mdash; June to October 2026</div>
+      <div class="gantt-scroll">
+        <div class="gantt-chart">
+
+          <!-- Month header — proportional to days in range (Jun 3 – Oct 31 = 150 days) -->
+          <div class="gantt-hrow">
+            <div class="gantt-lcol">Phase</div>
+            <div class="gantt-rcol gantt-months-row">
+              <span style="width:18%">Jun</span>
+              <span style="width:21%">Jul</span>
+              <span style="width:21%">Aug</span>
+              <span style="width:20%">Sep</span>
+              <span style="width:20%">Oct</span>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="gantt-body" id="ganttBody">
+
+            <!-- Month gridlines at Jul 1 (18%), Aug 1 (39%), Sep 1 (60%), Oct 1 (80%) -->
+            <div class="gantt-vlines" aria-hidden="true">
+              <div style="left:calc(180px + (100% - 180px)*.18)"></div>
+              <div style="left:calc(180px + (100% - 180px)*.39)"></div>
+              <div style="left:calc(180px + (100% - 180px)*.60)"></div>
+              <div style="left:calc(180px + (100% - 180px)*.80)"></div>
+            </div>
+
+            <!-- Today marker (positioned by JS) -->
+            <div class="gantt-today" id="ganttToday" aria-hidden="true">
+              <div class="gantt-today-line"></div>
+              <span class="gantt-today-chip">Today</span>
+            </div>
+
+            <!-- Registration (Jun 3 – Jun 30) -->
+            <div class="gantt-row">
+              <div class="gantt-lcol gantt-rlabel">
+                <div class="gtag gtag-launch">&#128197;</div>
+                <div>
+                  <div class="growname">Registration</div>
+                  <div class="growdate">Jun 3 &ndash; Jun 30</div>
+                </div>
+              </div>
+              <div class="gantt-rcol gantt-rbars">
+                <div class="gbar gbar-launch" style="left:0%;width:18%"></div>
+              </div>
+            </div>
+
+            <!-- Capacity Building (Jul 1 – Jul 28, 4 weekly sessions) -->
+            <div class="gantt-row">
+              <div class="gantt-lcol gantt-rlabel">
+                <div class="gtag gtag-build">CB</div>
+                <div>
+                  <div class="growname">Capacity Building</div>
+                  <div class="growdate">Jul 1 &ndash; Jul 28 &middot; 4 sessions</div>
+                </div>
+              </div>
+              <div class="gantt-rcol gantt-rbars">
+                <div class="gbar gbar-build gbar-sessions" style="left:18%;width:18%">
+                  <div class="gsess-tick"></div>
+                  <div class="gsess-tick"></div>
+                  <div class="gsess-tick"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pitch Week (Jul 29 – Aug 4) -->
+            <div class="gantt-row">
+              <div class="gantt-lcol gantt-rlabel">
+                <div class="gtag gtag-validate">&#127908;</div>
+                <div>
+                  <div class="growname">Pitch Week</div>
+                  <div class="growdate">Jul 29 &ndash; Aug 4</div>
+                </div>
+              </div>
+              <div class="gantt-rcol gantt-rbars">
+                <div class="gbar gbar-validate gbar-slim" style="left:36%;width:5%"></div>
+              </div>
+            </div>
+
+            <!-- Build Sprint (Aug 5 – Oct 5) -->
+            <div class="gantt-row">
+              <div class="gantt-lcol gantt-rlabel">
+                <div class="gtag gtag-pilot">&#9881;</div>
+                <div>
+                  <div class="growname">Build Sprint</div>
+                  <div class="growdate">Aug 5 &ndash; Oct 5</div>
+                </div>
+              </div>
+              <div class="gantt-rcol gantt-rbars">
+                <div class="gbar gbar-pilot" style="left:41%;width:39%"><span>Aug &rarr; Oct</span></div>
+              </div>
+            </div>
+
+            <!-- Restitution Week (Oct 6 – Oct 12) -->
+            <div class="gantt-row">
+              <div class="gantt-lcol gantt-rlabel">
+                <div class="gtag gtag-operate">&#10003;</div>
+                <div>
+                  <div class="growname">Restitution Week</div>
+                  <div class="growdate">Oct 6 &ndash; Oct 12</div>
+                </div>
+              </div>
+              <div class="gantt-rcol gantt-rbars">
+                <div class="gbar gbar-operate gbar-slim" style="left:80%;width:5%"></div>
+              </div>
+            </div>
+
+            <!-- Winners Announced (by Oct 31) -->
+            <div class="gantt-row">
+              <div class="gantt-lcol gantt-rlabel">
+                <div class="gtag gtag-winners">&#127942;</div>
+                <div>
+                  <div class="growname">Winners Announced</div>
+                  <div class="growdate">by Oct 31</div>
+                </div>
+              </div>
+              <div class="gantt-rcol gantt-rbars">
+                <div class="gbar gbar-winners" style="left:85%;width:15%"><span>&#127942;</span></div>
+              </div>
+            </div>
+
+          </div><!-- /gantt-body -->
+        </div><!-- /gantt-chart -->
+      </div><!-- /gantt-scroll -->
+    </div><!-- /gantt-wrap -->
+
+  </div>
+</section>
+
 <!-- LAUNCH RESOURCES -->
 <section class="resources" id="resources">
   <div class="section-inner reveal">
@@ -398,164 +592,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- SPRINT -->
-<section class="sprint" id="sprint">
-  <div class="section-inner reveal">
-    <div class="section-label">06 &middot; 4-Month Sprint</div>
-    <h2 class="section-title">Prototype. Validate. Pilot. Operate.</h2>
-    <p class="section-desc">The hackathon session kicks off a structured sprint. Here is the timeline.</p>
-    <div class="sprint-phases">
-      <div class="sprint-phase">
-        <div class="sprint-phase-num">Month 1</div>
-        <h4>Build</h4>
-        <ul>
-          <li>Configure EIOS / DIOS / WorldPop / PDI pipelines</li>
-          <li>First track outputs on real data</li>
-          <li>Track teams aligned with country counterparts</li>
-        </ul>
-      </div>
-      <div class="sprint-phase">
-        <div class="sprint-phase-num">Month 2</div>
-        <h4>Validate</h4>
-        <ul>
-          <li>Test against 3+ real past events</li>
-          <li>Country feedback sessions per track</li>
-          <li>Model bias and coverage audit</li>
-        </ul>
-      </div>
-      <div class="sprint-phase">
-        <div class="sprint-phase-num">Month 3</div>
-        <h4>Pilot</h4>
-        <ul>
-          <li>Deploy in 1&ndash;2 country pilot offices</li>
-          <li>Validation Portal onboarded</li>
-          <li>Thresholds co-designed with programme teams</li>
-        </ul>
-      </div>
-      <div class="sprint-phase">
-        <div class="sprint-phase-num">Month 4</div>
-        <h4>Operate</h4>
-        <ul>
-          <li>Live testing in operational context</li>
-          <li>Full documentation and handover</li>
-          <li>Code published open-source on GitHub</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Gantt Timeline -->
-    <div class="gantt-wrap reveal">
-      <div class="gantt-eyebrow">Sprint Calendar &mdash; June to October 2026</div>
-      <div class="gantt-scroll">
-        <div class="gantt-chart">
-
-          <!-- Month header -->
-          <div class="gantt-hrow">
-            <div class="gantt-lcol">Phase</div>
-            <div class="gantt-rcol gantt-months-row">
-              <span style="width:20%">Jun</span>
-              <span style="width:23%">Jul</span>
-              <span style="width:23%">Aug</span>
-              <span style="width:22%">Sep</span>
-              <span style="width:12%">Oct</span>
-            </div>
-          </div>
-
-          <!-- Body -->
-          <div class="gantt-body" id="ganttBody">
-
-            <!-- Month gridlines -->
-            <div class="gantt-vlines" aria-hidden="true">
-              <div style="left:calc(180px + (100% - 180px)*.206)"></div>
-              <div style="left:calc(180px + (100% - 180px)*.434)"></div>
-              <div style="left:calc(180px + (100% - 180px)*.662)"></div>
-              <div style="left:calc(180px + (100% - 180px)*.882)"></div>
-            </div>
-
-            <!-- Today marker (positioned by JS) -->
-            <div class="gantt-today" id="ganttToday" aria-hidden="true">
-              <div class="gantt-today-line"></div>
-              <span class="gantt-today-chip">Today</span>
-            </div>
-
-            <!-- Launch & Enroll -->
-            <div class="gantt-row">
-              <div class="gantt-lcol gantt-rlabel">
-                <div class="gtag gtag-launch">&#128197;</div>
-                <div>
-                  <div class="growname">Launch &amp; Enroll</div>
-                  <div class="growdate">Jun 3 &ndash; Jun 17</div>
-                </div>
-              </div>
-              <div class="gantt-rcol gantt-rbars">
-                <div class="gbar gbar-launch" style="left:0%;width:10.5%"><span>2 weeks</span></div>
-              </div>
-            </div>
-
-            <!-- Month 1: Build -->
-            <div class="gantt-row">
-              <div class="gantt-lcol gantt-rlabel">
-                <div class="gtag gtag-build">01</div>
-                <div>
-                  <div class="growname">Build</div>
-                  <div class="growdate">Jun 17 &ndash; Jul 17</div>
-                </div>
-              </div>
-              <div class="gantt-rcol gantt-rbars">
-                <div class="gbar gbar-build" style="left:10.5%;width:22%"><span>Month 1</span></div>
-              </div>
-            </div>
-
-            <!-- Month 2: Validate -->
-            <div class="gantt-row">
-              <div class="gantt-lcol gantt-rlabel">
-                <div class="gtag gtag-validate">02</div>
-                <div>
-                  <div class="growname">Validate</div>
-                  <div class="growdate">Jul 17 &ndash; Aug 17</div>
-                </div>
-              </div>
-              <div class="gantt-rcol gantt-rbars">
-                <div class="gbar gbar-validate" style="left:32.5%;width:22.8%"><span>Month 2</span></div>
-              </div>
-            </div>
-
-            <!-- Month 3: Pilot -->
-            <div class="gantt-row">
-              <div class="gantt-lcol gantt-rlabel">
-                <div class="gtag gtag-pilot">03</div>
-                <div>
-                  <div class="growname">Pilot</div>
-                  <div class="growdate">Aug 17 &ndash; Sep 17</div>
-                </div>
-              </div>
-              <div class="gantt-rcol gantt-rbars">
-                <div class="gbar gbar-pilot" style="left:55.3%;width:22.8%"><span>Month 3</span></div>
-              </div>
-            </div>
-
-            <!-- Month 4: Operate -->
-            <div class="gantt-row">
-              <div class="gantt-lcol gantt-rlabel">
-                <div class="gtag gtag-operate">04</div>
-                <div>
-                  <div class="growname">Operate &amp; Ship</div>
-                  <div class="growdate">Sep 17 &ndash; Oct 17</div>
-                </div>
-              </div>
-              <div class="gantt-rcol gantt-rbars">
-                <div class="gbar gbar-operate" style="left:78.1%;width:21.9%"><span>Month 4</span></div>
-              </div>
-            </div>
-
-          </div><!-- /gantt-body -->
-        </div><!-- /gantt-chart -->
-      </div><!-- /gantt-scroll -->
-    </div><!-- /gantt-wrap -->
-
   </div>
 </section>
 
