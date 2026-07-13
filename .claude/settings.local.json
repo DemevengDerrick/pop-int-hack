@@ -4,7 +4,8 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(git push *)",
-      "Bash(dir \"c:\\\\Users\\\\demeveng_unfpa\\\\Documents\\\\PopInt_hack_website\\\\mentors\" /b)"
+      "Bash(dir \"c:\\\\Users\\\\demeveng_unfpa\\\\Documents\\\\PopInt_hack_website\\\\mentors\" /b)",
+      "Bash(python -c ' *)"
     ]
   }
 }
